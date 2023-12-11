@@ -1,0 +1,2 @@
+# angularNewsApp
+News application
