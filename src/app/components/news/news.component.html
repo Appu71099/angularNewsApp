@@ -1,0 +1,11 @@
+<p>news works!</p>
+
+<div class="container my-3">
+<h2>Top Headlines</h2>
+
+<div class="row">
+    <div class="col-md-4 col-sm-6" *ngFor="let data of articles">
+        <app-news-item [article]="data"></app-news-item>
+    </div>
+</div>
+</div>
