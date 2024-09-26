@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientJsonpModule, HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
@@ -14,7 +14,8 @@ import { NgxUiLoaderModule } from 'ngx-ui-loader';
     AppComponent,
     NavbarComponent,
     NewsComponent,
-    NewsItemComponent
+    NewsItemComponent,
+    // HttpClientJsonpModule
   ],
   imports: [
     BrowserModule,
