@@ -2,39 +2,22 @@
 
 <!-- <button (click)="clickButton()">click</button> -->
 <div class="container my-3">
-<h2>Top Headlines</h2> <Span>{{category}}</Span>
+<h2>Top Headlines</h2> <Span style="font-size: 20px; text-transform: uppercase;">{{category}}</Span>
 <div class="d-flex">
 
 <span> Counts : </span> 
  <select class="form-select form-select-sm" aria-label=".form-select-sm example" style="width: 70px;" [(ngModel)]="pageSize" (change)="getAllItems()">
     <option *ngFor="let data of itemDropdown" [value]="data" >{{data}}</option>
   </select>
-<!-- 
-  <span> Countery : </span>  
-  <select class="form-select form-select-sm" aria-label=".form-select-sm example" style="width: 100px;" [(ngModel)]="counteryCode" (change)="changeCountery()">
-    <option *ngFor="let data of countery" [value]="data.code" >{{data.name}}</option>
-  </select> -->
+
+
 </div>
 
 <div class="row">
     <div class="col-md-4" *ngFor="let data of articles">
         <app-news-item [article]="data"></app-news-item>
     </div>
-    <!-- <div class="col-md-4">
-        <app-news-item></app-news-item>
-    </div>
-    <div class="col-md-4">
-        <app-news-item></app-news-item>
-    </div>
-    <div class="col-md-4">
-        <app-news-item></app-news-item>
-    </div>
-    <div class="col-md-4">
-        <app-news-item></app-news-item>
-    </div>
-    <div class="col-md-4">
-        <app-news-item></app-news-item>
-    </div> -->
+    
 </div>
 
 <div class="d-flex justify-content-between">
