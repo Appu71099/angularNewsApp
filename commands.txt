@@ -1,0 +1,3 @@
+Commanda to deploy angular project to git 
+
+1. ng b --output-path docs --base-href /git-live/
